@@ -72,7 +72,7 @@ const projectData = [
   {
     id: "2",
     name: "GitHub",
-    image: "./images/githubscrnsht.png",
+    image: "./images/Screenshot (71).png",
     source: "https://github.com/sean-cooper333?tab=repositories"
   },
 ];
