@@ -82,7 +82,7 @@ const resumeData = [
     id: "2",
     name: "Resume",
     image: "./images/resumescrnsht.png",
-    source: "./Resume-Website/Sean-Cooper.pdf"
+    source: "Sean-Cooper.pdf"
   }
 ];
 
