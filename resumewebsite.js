@@ -47,7 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
   function displayResume() {
     mainDiv.innerHTML = resumeData.map(resume =>
       `<div id="doc_div">
-  <img id="image_div" class="resume_div" src="${resume.image}" alt="${resume.name}">
+      <a href="${resume.source}" target="_blank" rel="noopener noreferrer">
+  <img id="image_div" class="resume_div" src="${resume.image}" alt="${resume.name}"></a>
   <p id="name_div">${resume.name}
   </p>
   </div>`
@@ -55,11 +56,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
+  // sourcery skip: avoid-function-declarations-in-blocks
   function displayProject() {
     mainDiv.innerHTML = projectData.map(project =>
       `<div id="doc_div">
-  <img id="image_div" class="project_div" src="${project.image}" alt="${project.name}">
-  <a id="name_div" onclick="${project.source}">${project.name}</a>
+      <a href="${project.source}" target="_blank" rel="noopener noreferrer">
+  <img id="image_div" class="project_div" src="${project.image}" alt="${project.name}"></a>
+
+  <br>
+  <p id="name_div" onclick="${project.source}">${project.name}</p>
   </div>`
     ).join("");
   }

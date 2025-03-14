@@ -71,9 +71,9 @@ const certData = [
 const projectData = [
   {
     id: "2",
-    name: "",
-    image: "",
-    source: ""
+    name: "GitHub",
+    image: "./images/githubscrnsht.png",
+    source: "https://github.com/sean-cooper333?tab=repositories"
   },
 ];
 
@@ -81,8 +81,8 @@ const resumeData = [
   {
     id: "2",
     name: "Resume",
-    image: "./Sean-Cooper.pdf",
-    source: ""
+    image: "./images/resumescrnsht.png",
+    source: "./Resume-Website/Sean-Cooper.pdf"
   }
 ];
 
