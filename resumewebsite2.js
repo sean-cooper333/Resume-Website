@@ -72,7 +72,7 @@ const projectData = [
   {
     id: "2",
     name: "GitHub",
-    image: "./images/githubscrnsht.png",
+    image: "./images/Screenshot (71).png",
     source: "https://github.com/sean-cooper333?tab=repositories"
   },
 ];
@@ -82,7 +82,7 @@ const resumeData = [
     id: "2",
     name: "Resume",
     image: "./images/resumescrnsht.png",
-    source: "./Resume-Website/Sean-Cooper.pdf"
+    source: "Sean-Cooper.pdf"
   }
 ];
 

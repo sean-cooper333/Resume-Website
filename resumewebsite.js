@@ -48,7 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
     mainDiv.innerHTML = resumeData.map(resume =>
       `<div id="doc_div">
       <a href="${resume.source}" target="_blank" rel="noopener noreferrer">
-  <img id="image_div" class="resume_div" src="${resume.image}" alt="${resume.name}"></a>
+  <img id="image_div" class="resume_div" src="${resume.image}" alt="${resume.name}">
+      </a>
   <p id="name_div">${resume.name}
   </p>
   </div>`
@@ -73,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelector("#homeBtn").addEventListener("click", displayWelcome);
   document.querySelector("#certsBtn").addEventListener("click", displayCerts);
-  document.querySelector("#resume").addEventListener("click", displayResume);
+  document.querySelector("#resume").addEventListener("click", displayResume)
   document.querySelector("#projectsBtn").addEventListener("click", displayProject);
 
 });
