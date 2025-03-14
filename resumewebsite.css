@@ -1,16 +1,29 @@
-
-
-
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-color: black;
-  background-size: 200% 200%;
-  background-position: 0% 50%;
+  animation: waveBackground 45s ease-in-out infinite;
+  background: linear-gradient(45deg, #000000, #5c5c5c);
+  background-size: 400% 400%;
   color: white;
 }
 
-#image_div{
-  height: 480x; 
+@keyframes waveBackground {
+  0% {
+    background-position: 0% 75%;
+  }
+
+
+  50% {
+    background-position: 100% 0%;
+  }
+
+
+  100% {
+    background-position: 0% 75%;
+  }
+}
+
+#image_div {
+  height: 480x;
   width: 500px;
   align-items: center;
 }
@@ -25,7 +38,7 @@ body {
 }
 
 div {
-  width: auto;  
+  width: auto;
   padding: 50px;
   margin: auto;
 }
@@ -33,7 +46,7 @@ div {
 .display_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  
+
 }
 
 #name_div {
@@ -47,6 +60,7 @@ div {
   box-shadow: 0 0 10px #00eda5, 0 0 20px #00eda5, 0 0 30px #00eda5;
   padding: 0px 50px 0px 50px;
   margin-bottom: 50px;
+  border-radius: 11%;
 }
 
 #intro_paragraph {
@@ -58,17 +72,22 @@ div {
   box-sizing: border-box;
   border: 2px solid green;
   box-shadow: 0 0 10px #00eda5, 0 0 20px #00eda5, 0 0 30px #00eda5;
+  border-radius: 4%
 }
-#cert_div{
+
+#cert_div {
   border: 2px solid green;
   box-shadow: 0 0 10px #00eda5, 0 0 20px #00eda5, 0 0 30px #00eda5;
   margin-bottom: 40px;
+  border-radius: 4%
 }
+
 #doc_div {
   border: 2px solid green;
   box-shadow: 0 0 10px #00eda5, 0 0 20px #00eda5, 0 0 30px #00eda5;
   margin-bottom: 40px;
   grid-column: 1 / -1;
+  border-radius: 11%
 }
 
 .header_link {
@@ -76,12 +95,13 @@ div {
   box-shadow: 0 0 10px #00eda5, 0 0 20px #00eda5, 0 0 30px #00eda5;
   margin-bottom: 40px;
   padding: 10px;
+  border-radius: 11%
 }
 
 
 
 .important_cert {
-  border: 2px solid #fffb00 !important; 
+  border: 2px solid #fffb00 !important;
   box-shadow: 0 0 10px #e9ed00, 0 0 20px #e9ed00, 0 0 30px #e9ed00 !important;
   margin-bottom: 40px !important;
 
