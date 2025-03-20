@@ -1,7 +1,7 @@
 body {
   font-family: 'Courier New', Courier, monospace;
   animation: waveBackground 45s ease-in-out infinite;
-  background: black;
+  background: linear-gradient(rgb(0, 0, 0), hsl(107, 90%, 24%), hwb(120 25% 45%));
   background-size: 400% 400%;
   color: white;
 }
@@ -40,7 +40,7 @@ body {
   font-size: 20px;
   padding: 10px 20px;
   gap: 25px;
-  border-bottom: 3px solid #00eda5;
+  border-bottom: 3px solid hsl(162, 100%, 46%);
 }
 
 div {
