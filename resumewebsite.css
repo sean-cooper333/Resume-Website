@@ -130,3 +130,9 @@ div {
   text-align: center;
 
 }
+
+#headshot-image {
+  width: 210px;
+  height: 270px;
+  padding-bottom: 40px;
+}

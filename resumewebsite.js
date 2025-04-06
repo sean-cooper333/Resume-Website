@@ -9,8 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
   function displayWelcome() {
     mainDiv.innerHTML =
       `
-  <div id="welcome_header">
+  <div id="welcome_header" placeholder="no image :(">
   <h2 >Welcome!</h2> 
+  <img id="headshot-image" src ="./images/headshot.png">
   </div>
   <div id="intro_paragraph">
   <p >My name is Sean Cooper, this is a very basic webpage I have created to display my resume, certificates and projects. Technology is my passion, most of my life I've worked physically demanding jobs (Landscaping, Farming,Delivery Driver). Currently I am studying Cyber Security (self taught) and working towards getting my CompTIA Security+, Network+ and/or the SAL1. Please have a look around, my plan is to add new projects/certs here as time goes on. Have a great day!</p>
