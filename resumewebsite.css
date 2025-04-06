@@ -115,3 +115,18 @@ div {
   margin-bottom: 40px !important;
 
 }
+
+#tryhackme_iframe {
+  width: 328px;
+  height: 85px;
+  border: 2px #fffb00 !important;
+  box-shadow: 0 0 10px #e9ed00, 0 0 20px #e9ed00, 0 0 30px #e9ed00 !important;
+  margin-bottom: 40px !important;
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 16%
+}
+
+#tryhackme_div {
+  text-align: center;
+}

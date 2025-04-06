@@ -20,26 +20,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   function displayCerts() {
-    mainDiv.innerHTML = certData.map(certificate =>
-      `<div id="cert_div" class="cert_container">
-  <a href="${certificate.source}" target="_blank" rel="noopener noreferrer">
-  <img id="image_div" class="cert_div" src="${certificate.image}" alt="${certificate.name}"></a>
-  <br>
-  <p id="name_div">${certificate.name}
-  </p>
-</div>`
-    ).join("");
+    mainDiv.innerHTML = `
+      <div id="tryhackme_div">
+        <iframe id="tryhackme_iframe" src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=4108161" scrolling="no" frameborder="0"></iframe>
+      </div>
+      ${certData.map(certificate => `
+        <div id="cert_div" class="cert_container">
+          <a href="${certificate.source}" target="_blank" rel="noopener noreferrer">
+            <img id="image_div" class="cert_div" src="${certificate.image}" alt="${certificate.name}">
+          </a>
+          <br>
+          <p id="name_div">${certificate.name}</p>
+        </div>
+      `).join("")}
+    `;
 
-    const certDivs = document.querySelectorAll(".cert_container")
+    const certDivs = document.querySelectorAll(".cert_container");
 
     certData.forEach((certificate, index) => {
-      const certDiv = certDivs[index]; // Get the div for the current certificate
+      const certDiv = certDivs[index];
       if (certificate.id === "1") {
         certDiv.classList.add("important_cert");
-        console.log(`Added important_cert to: ${certificate.name}`); // Debugging log to make sure proper classes are applied
+        console.log(`Added important_cert to: ${certificate.name}`);
       } else {
         certDiv.classList.add("normal_cert");
-        console.log(`Added normal_cert to: ${certificate.name}`); // Debugging log
+        console.log(`Added normal_cert to: ${certificate.name}`);
       }
     });
   }
